@@ -32,7 +32,7 @@ export function VideoSection() {
         <iframe 
           width="100%" 
           height="100%" 
-          src="https://www.youtube.com/embed/H7HvT-0FHL4"
+          src="https://www.youtube.com/embed/oO7njNiVEqg"
           title="Vídeo sobre agricultura" 
           frameBorder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
