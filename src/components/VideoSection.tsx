@@ -8,22 +8,22 @@ export function VideoSection() {
         <CardHeader>
           <CardTitle className="text-2xl md:text-3xl">Conteúdo em Vídeo</CardTitle>
           <CardDescription className="text-base">
-            Assista ao conteúdo do Globo Rural sobre as últimas tendências e inovações no setor agrícola.
+            Assista ao conteúdo sobre as últimas tendências e inovações no setor agrícola.
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
           <p>
-            O programa Globo Rural é uma das maiores referências em conteúdo agrícola no Brasil,
-            trazendo reportagens sobre as novidades e desafios do setor agropecuário.
+            O agronegócio brasileiro é um dos setores mais importantes da economia nacional,
+            sendo responsável por uma parcela significativa do PIB e das exportações do país.
           </p>
           <p>
-            Fique atento: este é um exemplo de vídeo e não contém conteúdo com copyright 
-            do programa. Para vídeos oficiais, acesse o site da Globo.
+            Acompanhe informações e novidades sobre técnicas de cultivo, maquinário agrícola,
+            sustentabilidade no campo e as mais recentes pesquisas para aumento de produtividade.
           </p>
         </CardContent>
         <CardFooter>
           <p className="text-sm text-muted-foreground">
-            Nota: Para o conteúdo completo, visite o site oficial do Globo Rural.
+            Nota: Para mais informações, consulte os portais oficiais do setor agropecuário.
           </p>
         </CardFooter>
       </Card>
