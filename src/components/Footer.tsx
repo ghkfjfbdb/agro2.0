@@ -13,7 +13,7 @@ export function Footer() {
               <Tractor className="h-6 w-6 text-agro-green" />
               <span className="text-lg font-display font-bold">AgroEventos</span>
             </div>
-            <p className="text-muted-foreground text-sm">
+            <p className="text-sm text-muted-foreground">
               Seu portal para eventos e festividades agropecuárias.
               Descubra os principais acontecimentos do setor agrícola.
             </p>
@@ -63,9 +63,14 @@ export function Footer() {
             <p className="text-sm text-muted-foreground text-center md:text-left">
               © {currentYear} AgroEventos. Todos os direitos reservados.
             </p>
-            <p className="text-sm text-muted-foreground text-center md:text-right">
-              Desenvolvido por <span className="font-medium text-primary">Eduardo Rosa Rodrigues</span>
-            </p>
+            <div className="text-center md:text-right">
+              <p className="text-sm">
+                Desenvolvido por{" "}
+                <span className="font-bold bg-gradient-to-r from-agro-green to-agro-green-light bg-clip-text text-transparent hover:scale-105 transition-all px-1 py-0.5 rounded border border-agro-green/20 shadow-sm animate-fade-in">
+                  Eduardo Rosa Rodrigues
+                </span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
