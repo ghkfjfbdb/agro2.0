@@ -1,5 +1,5 @@
 
-import { CalendarDays, MapPin } from "lucide-react";
+import { CalendarDays, MapPin, Calendar } from "lucide-react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -43,8 +43,16 @@ export function EventCard({ title, description, date, location, imageUrl, catego
       <CardContent>
         <p className="line-clamp-3 text-sm text-muted-foreground">{description}</p>
       </CardContent>
-      <CardFooter className="mt-auto pt-2">
+      <CardFooter className="mt-auto pt-2 gap-2 flex-col sm:flex-row">
         <Button className="w-full" variant="outline">Ver Detalhes</Button>
+        <Button 
+          className="w-full flex items-center gap-1" 
+          variant="secondary"
+          onClick={() => window.open("https://calendar.google.com/calendar/u/0/r/eventedit", "_blank")}
+        >
+          <Calendar className="h-4 w-4" />
+          <span>Adicionar ao Calendário</span>
+        </Button>
       </CardFooter>
     </Card>
   );
