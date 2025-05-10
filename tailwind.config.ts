@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,29 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+                agro: {
+                    green: {
+                        light: '#4CAF50',
+                        DEFAULT: '#2E7D32',
+                        dark: '#1B5E20'
+                    },
+                    brown: {
+                        light: '#8D6E63',
+                        DEFAULT: '#6D4C41',
+                        dark: '#4E342E'
+                    },
+                    wheat: {
+                        light: '#F9E2A2',
+                        DEFAULT: '#F5DEB3',
+                        dark: '#D7BE69'
+                    },
+                    earth: {
+                        light: '#A28359',
+                        DEFAULT: '#7B5D3B',
+                        dark: '#5D4322'
+                    }
+                }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +107,27 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+                'fade-in': {
+                    '0%': {
+                      opacity: '0',
+                      transform: 'translateY(10px)'
+                    },
+                    '100%': {
+                      opacity: '1',
+                      transform: 'translateY(0)'
+                    }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'fade-in': 'fade-in 0.3s ease-out'
+			},
+            fontFamily: {
+                'display': ['Playfair Display', 'serif'],
+                'body': ['Roboto', 'sans-serif']
+            }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
